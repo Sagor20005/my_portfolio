@@ -111,6 +111,9 @@ header > nav > img {
   border-radius: 5px;
   z-index: 4444;
 }
+.scrollBtn{
+  transform: translateX(-50%) translateY(-50px);
+}
 /* #letestWork_btn::after{
   content: "";
   height: 35px;
