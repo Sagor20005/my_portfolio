@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik+Vinyl&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
 </head>
@@ -16,7 +17,7 @@
   <!-- ___________HEADER NAVBAR SECTION______________ -->
 	<header>
 	  <nav>
-	    <a href="/"><img src="./img/myLogo.png" alt="Logo"></a>
+	    <a href="#home_section"><img src="./img/myLogo.png" alt="Logo"></a>
 	    <img id="mode" src="https://img.icons8.com/?size=100&id=6BUmPDkQO1MK&format=png&color=000000" alt="setting">
 	  </nav>
 	</header>
@@ -26,21 +27,21 @@
 	  <div class="section" id="home_section">
 	    <div id="content">
 	      <div id="textsDiv">
-	        <h1 id="home_name" class="jersey-10-regular">Jakareya Haldar</h1>
-	        <p id="my_position">MERN Stuck Devoloper</p>
-	        <button id="about_me_btn">About Me</button>
+	        <h1 data-aos="fade-left" id="home_name" class="jersey-10-regula">Jakareya Haldar</h1>
+	        <p data-aos="fade-right" class="t" id="my_position">MERN Stuck Devoloper</p>
+	        <button data-aos="fade-up-left" class="b" id="about_me_btn">About Me</button>
 	        <ul>
-	        <li><a href="https://www.facebook.com/Jakareya2005"><img src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000" alt="fb"></a></li>
-	        <li><a href="https://wa.me/qr/KG7F7GAZAVY6G1"><img src="https://img.icons8.com/?size=100&id=16713&format=png&color=000000" alt="whp"></a></li>
-	        <li><a href="https://github.com/Sagor20005"><img src="https://img.icons8.com/?size=100&id=dQUAwwnconR8&format=png&color=000000" alt="git"></a></li>
-	        <li><a href="https://www.instagram.com/jakareya.haldar/"><img src="https://img.icons8.com/?size=100&id=pyCxmaOCaZLl&format=png&color=000000" alt="insta"></a></li>
-	        <li><a href="#"><img src="https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000" alt="lkdn"></a></li>
-	        <li><a href="#"><img src="https://img.icons8.com/?size=100&id=13963&format=png&color=000000" alt="twtr"></a></li>
+	        <li data-aos="fade-up" ><a href="https://www.facebook.com/Jakareya2005"><img src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000" alt="fb"></a></li>
+	        <li data-aos="fade-down"><a href="https://wa.me/qr/KG7F7GAZAVY6G1"><img src="https://img.icons8.com/?size=100&id=16713&format=png&color=000000" alt="whp"></a></li>
+	        <li data-aos="fade-up"><a href="https://github.com/Sagor20005"><img src="https://img.icons8.com/?size=100&id=dQUAwwnconR8&format=png&color=000000" alt="git"></a></li>
+	        <li data-aos="fade-down"><a href="https://www.instagram.com/jakareya.haldar/"><img src="https://img.icons8.com/?size=100&id=pyCxmaOCaZLl&format=png&color=000000" alt="insta"></a></li>
+	        <li data-aos="fade-up"><a href="#"><img src="https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000" alt="lkdn"></a></li>
+	        <li data-aos="fade-down"><a href="#"><img src="https://img.icons8.com/?size=100&id=13963&format=png&color=000000" alt="twtr"></a></li>
 	      </ul>
 	      </div>
 	      
 	    </div>
-	    <a id="letestWork_btn" href="#wark_section">Letest work</a>
+	    <a class="b" id="letestWork_btn" href="#wark_section">Letest work</a>
 	  </div>
 	  
 	  <!-- WARK SECTION -->
@@ -51,7 +52,7 @@
 	      
 	      
 	    </div>
-	    <a class="scrollBtn" href="#contact_me">Connect Me</a>
+	    <a class="scrollBtn b" href="#contact_me">Connect Me</a>
 	  </div>
 	  
 	  <!-- CONTACT MEE SECTION -->
@@ -61,18 +62,18 @@
 	  <div id="formBox">
 	    <form method="get" action="/contactme">
 	    <div>
-	      <label>Enter Name</label>
-	      <input name="name" type="text">
+	      <label class="t">Enter Name</label>
+	      <input class="i" name="name" type="text">
 	    </div>
 	    <div>
-	      <label>Enter Email</label>
-	      <input name="email" type="email">
+	      <label class="t">Enter Email</label>
+	      <input class="i" name="email" type="email">
 	    </div>
 	    <div>
-	      <label>Enter message</label>
-	      <textarea name="message"></textarea>
+	      <label class="t">Enter message</label>
+	      <textarea class="i" name="message"></textarea>
 	    </div>
-	    <button>Send message</button>
+	    <button class="b">Send message</button>
 	  </form>
 	  </div>
 	  
@@ -82,7 +83,7 @@
 	<!-- FOOTER SECTION OUTSIDE OF MAIN SECTION -->
 	<footer>
 	  <div>
-	    <p>Jakareya Haldar ©2025</p>
+	    <p class="t">Jakareya Haldar ©2025</p>
 	    <img src="./img/myLogo.png" alt="logo">
 	    <nav>
 	      <a href="#"><img src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000" alt="fb"></a>
@@ -91,6 +92,7 @@
 	      <a href="#"><img src="https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000" alt="ld"></a>
 	    </nav>
 	  </div>
+	  
 	</footer>
 	
 	<!-- ALL FLOTING MENU IN DOWN -->
@@ -136,5 +138,11 @@
 	</div>
 	
 </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      AOS.init({
+        delay: 100,
+      })
+  </script>
   <script type="module" src="js/index.js"></script>
 </html>

@@ -16,25 +16,31 @@ closeBtn.addEventListener("click",showHide)
 
 const body = document.querySelector("body")
 const modeBtn = document.querySelector("#mode")
-const allP = document.querySelectorAll("p")
-const allA = document.querySelectorAll("a")
-const allLvl = document.querySelectorAll("label")
-// marge all a & p 
-const textElements = Array.from(allP).concat(Array.from(allA))
-textElements.concat(Array.from(allLvl))
-console.log(textElements)
+const txt = document.querySelectorAll(".t")
+const btn = document.querySelectorAll(".b")
+const inputFields = document.querySelectorAll(".i")
 
-const darkModeTxt = allP[0].style.color
-const lightModeTxt = "#313f42"
+//dark mode color
+const defaultTxtColor = txt[0].style.color
+const defaultBtnColor = btn[0].style.color
+const defaultInputBorderColor = inputFields[0].style.borderColor;
+// light mode color
+const lightTxtColor = "#273437"
+const lightBtnColor = "#1a2527"
+const lightBorderColor = "#1f2526"
 
 function modeChanger(){
   if(body.style.backgroundColor === "white"){
     body.style.backgroundColor = "black"
-    textElements.forEach((p)=> p.style.color = darkModeTxt)
+    txt.forEach((t)=> t.style.color = defaultTxtColor)
+    btn.forEach((b)=> b.style.color = defaultBtnColor)
+    inputFields.forEach((i)=> i.style.borderColor = defaultInputBorderColor)
     modeBtn.src = "https://img.icons8.com/?size=100&id=6BUmPDkQO1MK&format=png&color=000000"
   }else{
     body.style.backgroundColor = "white"
-    textElements.forEach((p)=> p.style.color = lightModeTxt)
+    txt.forEach((t)=> t.style.color = lightTxtColor)
+    btn.forEach((b)=> b.style.color = lightBtnColor)
+    inputFields.forEach((i)=> i.style.borderColor = lightBorderColor)
     modeBtn.src = "https://img.icons8.com/?size=100&id=zPlb1U0jTRvw&format=png&color=000000"
   }
 }

@@ -40,9 +40,13 @@ header > nav > img {
 }
 
                 /* MAIN CONTAINAR */
+.mainContainar{
+  scroll-snap-type: y mandatory;
+}
 .mainContainar .section{
   height: 100vh;
   width: 100vw;
+  scroll-snap-align: center;
 }
 
                     /* HOME SECTION */
@@ -135,6 +139,7 @@ header > nav > img {
   padding-top: 20px;
   width: 100%;
   position: relative;
+  
 }
 
 #section_title{
@@ -188,17 +193,17 @@ header > nav > img {
   
 }
 .projact_detels h2{
-  color: #a29668;
+  color: #7e92ae;
   margin: 10px 0;
   text-transform: capitalize;
 }
 .projact_detels h3{
-  color: #afb880;
+  color: #6094c0;
   margin: 10px 0;
   text-transform: capitalize;
 }
 .projact_detels p{
-  color: #e4d8d8;
+  color: #5f7a85;
   text-transform: capitalize;
   font-family: Monospace;
 }
@@ -211,11 +216,11 @@ header > nav > img {
   flex-wrap: wrap;
 }
 .projact_detels ul li{
-  padding: 3px 5px;
+  padding: 4px 6px;
   border: 1.3px solid #b59d9d;
   border-radius: 10px;
   list-style: none;
-  color: #e4d8d8;
+  color: #5f7a85;
   font-family: Monospace;
 }
 
@@ -278,6 +283,8 @@ footer{
   width: 100%;
   height: 200px;
   margin-top: 31px;
+  position: relative;
+  padding-bottom: 30px;
 }
 footer div{
   
@@ -297,6 +304,7 @@ footer div nav a img{
   height: 20px;
   width: 20px;
 }
+
 
 
 
